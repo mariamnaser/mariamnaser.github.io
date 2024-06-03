@@ -1,108 +1,150 @@
-@import url(
-        https://fonts.googleapis.com/css?family=Sofia);
-
-.title{
-  font-family: Sofia;
-
-}
-
-/* Reset some default browser styles */
-body, h1, h2, p, ul, li, a {
-    margin: 0;
-    padding: 0;
-}
-
-/* Set a background color and font styles */
 body {
-    background-color: #f7f7f7;
-    font-family: 'Arial', sans-serif;
-    color: #333;
+  padding: 2vh 8vh;
+  color: black;
+  background-color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
 }
 
-/* Style the header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-header h1 {
-    font-size: 2.5em;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-/* Style the navigation menu */
-header ul {
-    list-style: none;
-}
-
-header li {
-    display: inline;
-    margin: 0 20px;
-}
-
-header a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Style the sections */
-section {
-    background-color: #fff;
-    padding: 40px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-section p {
-    font-size: 1.2em;
-    color: #555;
-}
-
-/* Style links in the projects section */
-section#projects a {
-    color: #0078d4;
-}
-
-/* Style the footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Add hover effect for links */
 a:hover {
-    color: #0078d4;
-    transition: color 0.3s;
+  text-decoration: underline;
+  color: black;
 }
 
-/* Responsive layout for smaller screens */
-@media (max-width: 768px) {
-    header ul {
-        display: block;
-        text-align: center;
-    }
+input {
+  height: 5vh;
+}
 
-    header li {
-        display: block;
-        margin: 10px 0;
-    }
+.submitbutt {
+  height: 8vh;
+  font-size: 2vh;
+  align-text: flex-end; /* Align items to the bottom */
+}
+
+.footer {
+  padding-top: 15vh;
+}
+
+.navbar-nav a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.nav_dark .navbar-nav {
+  margin-left: auto;
+}
+
+.namesec {
+  padding-top: 15vh;
+}
+
+.namename {
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.namesum {
+  padding: 1vh 0 10vh;
+  font-size: 3vh;
+  color: #828282;
+}
+
+.aboutsec {
+  padding: 10vh 20vw;
+  font-size: 2.5vh;
+  font-weight: medium;
+}
+
+.optional {
+  display: none;
+}
+
+.highProjH {
+  font-size: 5vw;
+  font-weight: bold;
+  padding-bottom: 2vh;
+}
+
+.bd-placeholder-img {
+  border-radius: 15px;
+}
+
+.proj_title {
+  padding: 1vh 0 0 1vh;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+.proj_desc {
+  font-size: 2vh;
+  padding-left: 1vh;
+  color: #828282;
+}
+
+.footname {
+  font-size: 3vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.top_row {
+  line-height: 3;
+}
+
+.pages {
+  color: #454545;
+}
+
+.pages a {
+  color: #454545;
+  text-decoration: none;
+}
+
+.pages a:hover {
+  color: #454545;
+  text-decoration: underline;
+}
+
+.proj_sub {
+  padding: 3vh 0 3vh 1vh;
+  font-size: 3vh;
+}
+
+.aboutdesc {
+  padding: 1vh 0 5vh;
+  font-size: 3vh;
+  color: #828282;
+  line-height: 2;
+}
+.bd-placeholder-img {
+  width: 100%;
+  height: auto; /* This maintains the aspect ratio */
+}
+.resume_embed{
+  padding-top: 4vh;
+}
+.proj_img{
+  border: .5vh solid #555;
+}
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 2vh 4vh;
+  }
+
+  .aboutsec {
+    padding: 10vh 10vw;
+  }
+
+  .namename {
+    font-size: 12vw;
+  }
+
+  .namesum, .proj_title, .proj_desc, .footname, .proj_sub, .aboutdesc {
+    font-size: 2.5vh;
+  }
 }
